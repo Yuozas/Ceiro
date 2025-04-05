@@ -1,4 +1,5 @@
-# Ceiro
+
+<img src="icon-with-bg.svg" alt="Ceiro Logo" width="200" />
 
 Ceiro is an isometric survival game developed with Godot 4.4.1 and C# using the Godot.NET SDK.
 
