@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://eqib8gidcsmt"]
+
+[ext_resource type="Script" uid="uid://c2t06af8i28sv" path="res://_oldScripts/FloorTile.cs" id="1_vqnkw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5nsto"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gjpho"]
+material = SubResource("StandardMaterial3D_5nsto")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p70al"]
+
+[node name="FloorTile" type="StaticBody3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+script = ExtResource("1_vqnkw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_gjpho")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 0.1, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("BoxShape3D_p70al")

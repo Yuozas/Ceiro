@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwk8bicaitim0"]
+
+[ext_resource type="PackedScene" uid="uid://b3es6m2dflk0o" path="res://Prefabs/Player.tscn" id="1_5cjrv"]
+
+[node name="World" type="Node3D"]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_5cjrv")]
